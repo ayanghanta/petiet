@@ -1,13 +1,95 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+/* 
+COLOR PALATE 
+#FB929E
+#574143
+#b6b464
+
+*/
+
+body {
+  font-family: "Caveat", cursive;
+  /* font-family: "Dosis", sans-serif; */
+  background-color: #fff4f5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::selection {
+  background: #fb929e;
+  color: #fff;
+}
+/* .tag {
+  background-color: #fb929e;
+  color: #fff;
+} */
+.app {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 130rem;
+  padding: 0 1.2rem;
+  /* background-color: red; */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9.6rem;
+}
+.logo {
+  font-size: 5.2rem;
+  font-weight: 500;
+  color: #e2838e;
+}
+.navbar ul {
+  list-style: none;
+}
+.nav_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.nav_link a:link,
+.nav_link a:visited {
+  font-size: 2.4rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #a4a25a;
+}
+.nav_link a:hover,
+.nav_link a:active {
+  transition: all 0.3s;
+  font-size: 2.4rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #5b5a32;
+}
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  margin-bottom: 6.4rem;
+}
+h1 {
+  font-size: 6.4rem;
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: -0.1px;
+  color: #494828;
+}
+.header p {
+  font-size: 3.2rem;
+  line-height: 1.4;
+  color: #494828;
 }
