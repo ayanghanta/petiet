@@ -17,7 +17,8 @@ COLOR PALATE
 body {
   font-family: "Caveat", cursive;
   /* font-family: "Dosis", sans-serif; */
-  background-color: #fff4f5;
+  /* background-color: #fff4f5; */
+  background-color: #fffafa;
 }
 
 ::selection {
@@ -28,18 +29,45 @@ body {
   background-color: #fb929e;
   color: #fff;
 } */
-.app {
+.btn {
+  all: unset;
+  font-size: 2.2rem;
+  font-weight: 500;
+  border-radius: 6.4rem;
+  cursor: pointer;
+}
+.main {
   margin-left: auto;
   margin-right: auto;
   max-width: 130rem;
   padding: 0 1.2rem;
   /* background-color: red; */
 }
+h1 {
+  font-size: 6.4rem;
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: -0.1px;
+  color: #494828;
+}
+h2 {
+  font-size: 5.2rem;
+  font-weight: 500;
+  color: #5b5a32;
+  line-height: 1.1;
+  letter-spacing: -0.1px;
+  margin-bottom: 4.8rem;
+}
+h3 {
+  font-size: 4.2rem;
+  color: #5b5a32;
+  margin-bottom: 2rem;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 9.6rem;
+  margin-bottom: 6.4rem;
 }
 .logo {
   font-size: 5.2rem;
@@ -79,17 +107,178 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 3.2rem;
-  margin-bottom: 6.4rem;
+  margin-bottom: 9.6rem;
 }
-h1 {
-  font-size: 6.4rem;
-  text-align: center;
-  line-height: 1.1;
-  letter-spacing: -0.1px;
-  color: #494828;
-}
+
 .header p {
   font-size: 3.2rem;
   line-height: 1.4;
   color: #494828;
+}
+
+.hero_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+  padding-bottom: 12.8rem;
+}
+.btn_hero {
+  transition: all 0.3s;
+  font-size: 2.8rem;
+  padding: 1.6rem 3.2rem;
+  color: #fff;
+  background-color: #fb929e;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.btn_hero:hover {
+  transition: all 0.3s;
+  transform: scale(1.2);
+  background-color: #fcb3bb;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+/* HEALTH FORM */
+.form_health--container {
+  padding: 0rem 0 9.6rem 0;
+}
+.health_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.health_form div {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.health_form select,
+.health_form input {
+  justify-self: start;
+}
+.health_form label {
+  font-size: 2.8rem;
+  color: #4e3b3c;
+  font-weight: 500;
+}
+select,
+textarea,
+input {
+  padding: 0.8rem 1.6rem;
+  background-color: #dbdab2;
+  color: #3d2e2f;
+  font-weight: 500;
+  font-family: inherit;
+  border: none;
+  font-size: 2.4rem;
+  border-radius: 1.2rem;
+}
+select {
+  text-align: center;
+}
+textarea {
+  resize: none;
+  height: 15rem;
+  width: 70%;
+}
+
+.weight_inp {
+  grid-template-columns: 30% 20% 20% !important;
+}
+.btn-submit {
+  text-transform: uppercase;
+  background-color: #fb929e;
+  color: #fff;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  align-self: center;
+  margin-top: 6.4rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: all 0.3s;
+}
+.btn-submit:hover {
+  background-color: #b6b464;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+/* DIAGNOSIS SECTION */
+.diag_section {
+  margin-bottom: 9.6rem;
+}
+.pet_details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: 2.4rem;
+  margin-bottom: 6.4rem;
+}
+.pet_details li {
+  display: flex;
+  gap: 1rem;
+}
+.pet_details span {
+  font-weight: 600;
+}
+.card_lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.4rem;
+}
+/* DIAGNOSIS CARD */
+.diagnosis_card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.4rem 1.2rem;
+  background-color: #fedee2;
+  border-radius: 1.2rem;
+}
+.diagnosis_card ul {
+  list-style: none;
+}
+.diagnosis_title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.diagnosis_description {
+  font-size: 1.8rem;
+  line-height: 1.1;
+  margin-bottom: 1.6;
+}
+.diagnosis_card div {
+  margin-left: 1.2rem;
+}
+.diagnosis_card div p {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.diagnosis_card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-left: 1.2rem;
+}
+.diagnosis_card ul li {
+  font-size: 2.2rem;
+}
+/* Footer */
+.footer {
+  padding: 9.6rem 4.8rem 6.4rem 4.8rem;
+  background-color: #dbdab2;
+}
+.footer_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer ul {
+  list-style: none;
+}
+.footer li {
+  font-size: 1.8rem;
+}
+.footer_logo {
+  font-size: 3.6rem !important;
 }

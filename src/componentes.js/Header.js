@@ -9,7 +9,7 @@ export default function Header() {
       <p>
         Petiet offers tailored health insights and care plans for your pet. Get
         personalized advice for their well-being, diet, and happiness—right at
-        your fingertips.
+        your fingertips.🩷
       </p>
     </div>
   );
