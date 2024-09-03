@@ -1,20 +1,22 @@
-export default function PetDetails() {
+export default function PetDetails({ petInfo }) {
   return (
     <ul className="pet_details">
       <li>
-        <span>Pet: </span>Cat
+        <span>Pet: </span>
+        {petInfo.pet}
       </li>
       <li>
         <p>
-          <span>Age: </span>3 years,
+          <span>Age: </span>
+          {petInfo.petAge} years,
         </p>
         <p>
-          <span>Weight: </span> 5Kg
+          <span>Weight: </span> {petInfo.petWeight}
         </p>
       </li>
       <li>
-        <span>Issue: </span>My cat has been coughing frequently and seems to be
-        wheezing. She’s also a bit lethargic lately.
+        <span>Issue: </span>
+        {petInfo.issue}
       </li>
     </ul>
   );
