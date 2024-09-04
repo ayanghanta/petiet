@@ -3,7 +3,7 @@ import PetDetails from "./PetDetails";
 import Loader from "../Loader.js";
 import Error from "./Error";
 
-import useGetGeminiResponce from "../customStates/useGetGeminiRes.js";
+import useGetGeminiResponce from "../customHooks/useGetGeminiRes";
 
 const mySchema = {
   type: "object",
@@ -74,6 +74,7 @@ export default function DiagnosisResultSection({ petDetails }) {
   }. Please provide a diagnosis, including the top 3 different possible health issues, their symptoms, causes, cures, and recommended doctors.`;
 
   const { isLoading, result, error } = useGetGeminiResponce(mySchema, prompt);
+  console.log(result);
 
   return (
     <div className="diag_section">
@@ -89,7 +90,7 @@ export default function DiagnosisResultSection({ petDetails }) {
 
         {error.length !== 0 || isLoading || (
           <div className="card_lists">
-            {result.map((diagnosis, i) => (
+            {result?.diagnosis?.map((diagnosis, i) => (
               <DiagnosisCard
                 result={diagnosis}
                 key={`${diagnosis.title}${i}`}

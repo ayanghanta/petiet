@@ -160,6 +160,12 @@ h3 {
   color: #4e3b3c;
   font-weight: 500;
 }
+label {
+  font-size: 2.4rem;
+
+  color: #3d2e2f;
+  font-weight: 500;
+}
 select,
 textarea,
 input {
@@ -264,10 +270,83 @@ textarea {
 .diagnosis_card ul li {
   font-size: 2.2rem;
 }
+/* DIET FORM SECTION */
+
+.diet_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.diet_form div {
+  display: grid;
+  grid-template-columns: 40% 40%;
+}
+.diet_form select,
+.diet_form input {
+  width: fit-content;
+}
+input::placeholder,
+select::placeholder {
+  color: #9aa07f;
+}
+.grid-3 {
+  display: grid !important;
+  grid-template-columns: 40% 20% 20% !important;
+}
+/* DIET DISPLAY */
+.diet_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  column-gap: 2.4rem;
+}
+.diet_card {
+  justify-self: center;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 1.2rem;
+  padding: 2rem 2.8rem;
+}
+.diet_card h3 {
+  font-size: 2.8rem;
+  margin-bottom: 1.6rem;
+  color: #333;
+}
+.diet_card div {
+  margin-bottom: 1.4rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 0.8rem;
+}
+.diet_card div h4 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+.diet_card div p {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+  color: #555;
+}
+.nutri_card_section strong {
+  font-size: 2.2rem;
+}
+.nutri_list {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.8rem;
+}
+
 /* Footer */
 .footer {
-  padding: 9.6rem 4.8rem 6.4rem 4.8rem;
-  background-color: #dbdab2;
+  padding: 9.6rem 4.8rem 2.8rem 4.8rem;
+  background-color: #e2e1c1;
+  color: #6d6c3c;
 }
 .footer_container {
   display: grid;

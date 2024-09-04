@@ -31,7 +31,7 @@ export default function useGetGeminiResponce(responceSchema, prompt) {
 
           setIsLoading(false);
 
-          setResult(data.diagnosis);
+          setResult(data);
         } catch (err) {
           setIsLoading(false);
 
@@ -42,14 +42,14 @@ export default function useGetGeminiResponce(responceSchema, prompt) {
 
             setError("Sorry we currently did not fetch your data :/");
           } else {
-            console.log("UNEXPECTED ERROR");
+            console.log(error);
             setError("UNEXPECTED ERROR");
           }
         }
       }
-      // GetDiagnosis();
+      GetDiagnosis();
     },
-    [prompt, responceSchema]
+    [prompt, responceSchema, error]
   );
 
   return { isLoading, result, error };
