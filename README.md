@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Petiet 🐾 - Personalized Pet Health Insights and Diet Plans
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Petiet** is a modern web application designed to assist pet owners in diagnosing their pet's health problems and generating personalized diet plans. The app leverages AI to provide insights tailored to each pet's needs, offering a comprehensive solution for maintaining your pet’s health and well-being.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+### 1. Diagnose Pet Health Problems 🏥
 
-### `npm start`
+- Users can enter details about their pet (e.g., type, age, weight) and describe the health issue.
+- The app returns the top 3 potential health problems, including:
+  - Detailed symptoms
+  - Possible reasons for the issue
+  - Suggested solutions
+  - Type of veterinarian to consult
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Personalized Diet and Care Plans 🥘🥕
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Pet owners can input their pet’s details (e.g., type, age, weight, health conditions).
+- The app generates a custom diet plan with daily meal suggestions and nutritional information for up to 7 days.
+- Each meal includes:
+  - Food type
+  - Protein, carbohydrates, and fats content
+  - Portion size
+  - Suggested supplements (optional)
 
-### `npm test`
+### 3. Simple and Intuitive UI 💻
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- The app features a clean, modern design with a two-color theme focused on pet health and care.
+- Users can easily navigate between diagnosing health issues and generating diet plans.
 
-### `npm run build`
+## 🛠️ Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend:** React (Hooks, Functional Components, JSX)
+- **API:** Google Gemini 1.5 Flash API for retrieving AI-generated insights.
+- **Styling:** Custom CSS for a beautiful, responsive UI.
+- **Design:** Focus on a modern, user-friendly experience, tailored for pet owners.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🐕‍🦺 How it Works
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Diagnosing Health Issues:**
 
-### `npm run eject`
+   - Enter pet details (type, age, weight, and a description of the issue).
+   - AI provides the top 3 possible diagnoses with symptoms, reasons, and solutions.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Getting a Diet Plan:**
+   - Enter pet details (type, age, weight, health conditions, and dietary preferences).
+   - Get a detailed diet plan with daily meal suggestions, portion sizes, and supplements for up to 7 days.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📦 Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ayanghanta/petiet.git
+   cd petiet
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 👏 Contributions
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to contribute to Petiet! If you have any ideas, issues, or suggestions, open an issue or submit a pull request.
